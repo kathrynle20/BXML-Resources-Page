@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Resources Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="nav-bar">
+            <div class="title">
+                <h1>Resources</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="resource-items-wrapper">
+
+            <div class="resouce-item-wrapper">
+                <div class="resource-img-background" style="background-image:url(images/bxsci.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/bxsci-logo.jpg" alt="">
+                    </div>
+
+                    <div class="subtitle">The Bronx Science website has a lot of resources and opportunities. Click <a href="https://www.bxscience.edu/">HERE!</a></div>
+                </div>
+            </div>
+
+            <div class="resouce-item-wrapper">
+                <div class="resource-img-background" style="background-image:url(images/kaggle.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/kaggle-logo.png" alt="">
+                    </div>
+
+                    <div class="subtitle">Kaggle is a a great machine learning platform where you can learn and enter competitions to test your skills. Click <a href="https://www.kaggle.com/">HERE!</a></div>
+                </div>
+            </div>
+
+            <div class="resouce-item-wrapper">
+                <div class="resource-img-background" style="background-image:url(images/github.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/github-logo.png" alt="">
+                    </div>
+
+                    <div class="subtitle">GitHub is where you can share and collaborate with others on projects. Click <a href="https://github.com/">HERE!</a></div>
+                </div>
+            </div>
+
+            <div class="resouce-item-wrapper">
+                <div class="resource-img-background" style="background-image:url(images/colab.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/colab-logo.png" alt="">
+                    </div>
+
+                    <div class="subtitle">Google Colaboratory is an accessible and easy to use cloud notebook platform. Click <a href="https://colab.research.google.com/">HERE!</a></div>
+                </div>
+            </div>
+
+            <div class="resouce-item-wrapper">
+                <div class="resource-img-background" style="background-image:url(images/mlh.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/mlh-logo.jpg" alt="">
+                    </div>
+
+                    <div class="subtitle">Major League Hacking hosts many great hackathons throughout the year where you can get resources, see workshops and meet people from all over the world. Click <a href="https://mlh.io/">HERE!</a></div>
+                </div>
+            </div>
+
+            <div class="resouce-item-wrapper">
+                <div class="resource-img-background" style="background-image:url(images/edx.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/edx-logo.jpg" alt="">
+                    </div>
+
+                    <div class="subtitle">EDX is a website where you can access free courses from colleges like MIT and Harvard. Click <a href="https://mlh.io/">HERE!</a></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const resourceItems = document.querySelectorAll('.resource-item-wrapper');
+  
+    resourceItems.forEach(resourceItem => {
+      resourceItem.addEventListener('mouseover', () => {
+        console.log(resourceItem.childNodes[1].classList)
+        resourceItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      resourceItem.addEventListener('mouseout', () => {
+        console.log(resourceItem.childNodes[1].classList)
+        resourceItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+
+</html>
