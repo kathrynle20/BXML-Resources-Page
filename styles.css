@@ -2,9 +2,12 @@ body {
     font-family: 'Courgette', cursive;
     margin: 0px;
   }
+body .title h3{
+    font-family: "Lato", sans-serif;
+}
 
 .nav-bar {
-    height: 50px;
+    height: 100px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
   }
