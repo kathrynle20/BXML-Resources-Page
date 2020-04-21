@@ -1,5 +1,5 @@
 body {
-    font-family: "Times New Roman", sans-serif;
+    font-family: 'Courgette', cursive;
     margin: 0px;
   }
 
@@ -42,28 +42,39 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 }
+
+.logo-wrapper img {
+    width: 70%;
+    margin-bottom: 20px;
+}
   
-/*.img-text-wrapper .subtitle {
+.img-text-wrapper .subtitle {
     transition: 1s;
+    font-weight:600;
     color: transparent;
-}*/
+}
   
-/*.image-blur {
+.image-blur {
     transition: 1s;
     filter: brightness(10%);
-}*/
+}
 
-/*.img-text-wrapper:hover .subtitle {
+.img-text-wrapper:hover .subtitle {
     color: lightseagreen;
     font-weight: 600;
-}*/
+}
+
+.img-text-wrapper:hover .subtitle a {
+    color: lightseagreen;
+    font-weight: 600;
+}
   
-/*.logo-wrapper img {
+.logo-wrapper img {
     width: 50%;
     margin-bottom: 20px;
-}*/
+}
 
-/*.img-text-wrapper > .subtitle a{
+.subtitle a{
     color: aquamarine;
     font-family: "Lato", sans-serif;
-}*/
+}
